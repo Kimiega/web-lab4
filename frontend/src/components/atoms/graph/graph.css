@@ -1,0 +1,13 @@
+.canvas-wrapper canvas {
+    cursor: crosshair;
+    transition-duration: 0s
+}
+
+.canvas-wrapper {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: inline-block;
+    flex: 2.5;
+    margin-left: 1vw;
+}

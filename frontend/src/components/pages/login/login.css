@@ -1,0 +1,125 @@
+.login-form-wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.login-form *{
+    transition-duration: 0.6s;
+}
+
+.login-form button{
+    transition-duration: 0.3s;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.login-form input {
+    text-align: center;
+}
+
+.login-form .login-error {
+    border-color: red;
+}
+
+.login-form input.login-error{
+    /*color: red;*/
+}
+
+.login-form .error-text {
+    margin-top: 7%;
+}
+
+.login-form .form-errors {
+    display: block;
+}
+
+.login-form>div {
+    flex: 1;
+    justify-content: center;
+}
+
+.log-field {
+    margin-top: 2%;
+    font-size: larger;
+}
+
+.log-field+.log-field {
+    margin-top: 5%;
+}
+
+.log-field label+label {
+    margin-top: 5%;
+    font-size: 120%;
+}
+
+
+.log-field input{
+    font-size: 150%;
+}
+
+.login-buttons {
+    margin-top: 5%;
+}
+
+.login-buttons button{
+    padding: 2% 4%;
+    font-size: 1vw;
+    border-radius: 0.5vw
+}
+
+.login-buttons button+button{
+    margin-left: 10%;
+}
+
+.login-form-wrapper .error-text+.error-text {
+    display: none
+}
+
+#username, #password {
+    width: 50%;
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 747px) {
+    .log-field {
+        /*font-size: larger;*/
+        font-size: medium;
+    }
+
+    .login-buttons button{
+        padding: 2% 4%;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1176px) and (min-width: 747px){
+    .log-field {
+        /*font-size: larger;*/
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 1176px) {
+    .log-field {
+        /*font-size: larger;*/
+        font-size: 1.5vw;
+    }
+
+    .login-form .error-text {
+        margin-top: 2.3vw;
+        font-size: 1.45vw;
+    }
+
+    .login-buttons {
+        margin-top: 2%;
+    }
+}

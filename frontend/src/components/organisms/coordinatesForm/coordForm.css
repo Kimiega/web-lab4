@@ -1,0 +1,44 @@
+.has-error {
+    background-color: #1a1a1a;
+    color: red;
+    border: 0.35vw outset red;
+}
+
+.nums-field {
+    background-color: #1a1a1a;
+    color: white;
+    border: 0.35vw outset rgba(0, 0, 255, 0.68);
+}
+
+.main-wrapper .error-text+.error-text {
+    display: none
+}
+
+.error-text {
+    color: red;
+    font-weight: bold;
+}
+
+.coordinates-wrapper .error-text+.error-text {
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 747px) {
+    .nums-field, .has-error {
+        border: none
+    }
+
+    input[type=text] {
+        text-align: center;
+    }
+
+    .error-text {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 1176px) {
+    .error-text {
+        font-size: 1vw;
+    }
+}

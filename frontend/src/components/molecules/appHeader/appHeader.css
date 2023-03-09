@@ -1,0 +1,79 @@
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    box-shadow: 0 0 1vw 0.5vw darkblue;
+}
+
+.header .lab-name{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.header > div {
+    display: flex;
+    align-items: center;
+    margin: 1vh 2vw auto;
+    flex-direction: column;
+}
+
+.header span{
+    text-align: center;
+    margin-bottom: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.header-button-wrapper {
+    display: flex;
+}
+
+.logout {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+header .user-name-tag {
+  margin-top: 25%;
+  margin-left: 200%;
+  bottom: 50%;
+  align-items: center;
+  flex-direction: column;
+
+}
+@media screen and (max-width: 747px){
+    .header span {
+        font-size: 3vw;
+    }
+    .header-button-wrapper * {
+        font-size: 2vw;
+        padding: 2vw 5vw;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .header span {
+        font-size: 3.5vw;
+    }
+    .header-button-wrapper {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 1176px) {
+    .header span {
+        font-size: 1.5vw;
+    }
+    .header-button-wrapper * {
+        font-size: 1vw;
+        padding: 1vw 2vw;
+    }
+}

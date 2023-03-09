@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@200;400&display=swap');
+
+* {
+    /*font-family: "MuseoModerno", cursive;*/
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background-image: url(./image.png);*/
+    background-color: #1a1a1a;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+{
+    transition-duration: 0s;
+    -webkit-box-shadow: 0 0 0 500px #1a1a1a inset;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: white;
+    color: white;
+    caret-color : white;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    transition-duration: 0.6s;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 14px 35px;
+    font-size: 100%;
+}
+
+button:hover {
+    background-color: #1a1a1a;
+    color: white;
+    border-color: white;
+}
+
+@media screen and (max-width: 747px) {
+    input[type=text] {
+        text-align: center;
+        border-width: 1px;
+    }
+
+    input[type=text]:focus {
+        outline-width: 0;
+    }
+}

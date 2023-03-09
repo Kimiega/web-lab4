@@ -1,0 +1,33 @@
+.button-elem {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex: 2.5;
+}
+
+.button-elem button {
+    border-radius: 0.5vw;
+}
+
+@media screen and (max-width: 747px) {
+    .button-elem button {
+        font-size: 2.5vw;
+        padding: 1.5vw 4vw;
+        min-width: 18vw;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .button-elem button {
+        margin-top: 4%;
+        /*padding: 3vw 5vw;*/
+    }
+}
+
+@media screen and (min-width: 1176px) {
+    .button-elem button {
+        font-size: 1.2vw;
+        padding: 1vw 2vw;
+        min-width: 10vw;
+    }
+}

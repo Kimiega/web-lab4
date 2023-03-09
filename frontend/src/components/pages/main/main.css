@@ -1,0 +1,98 @@
+.form-wrapper {
+    margin-left: 2%;
+    display: table;
+    flex: 2.5;
+
+}
+
+.coordinates-wrapper * {
+    transition-duration: 0.6s;
+}
+
+
+.button-wrapper {
+    margin-right: 5%;
+    padding: 8px;
+    border-radius: 10px;
+    flex: 2.5;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.main-wrapper {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-flow: row nowrap;
+}
+
+.coordinates-wrapper {
+    display: flex;
+    flex: 5;
+    /*margin-left: auto;*/
+}
+
+@media screen and (max-width: 1176px) and (min-width: 747px) {
+    .button-wrapper {
+        margin-left: 5vh;
+    }
+
+    .coordinates-wrapper * {
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (max-width: 747px) {
+    .main-wrapper {
+        flex-flow: column nowrap;
+    }
+
+    .button-wrapper {
+        margin: 0;
+        flex: 1.5;
+        /*margin-left: 5%;*/
+    }
+
+    .form-wrapper {
+        margin: 0
+        /*margin-right: 5%;*/
+    }
+
+    .coordinates-wrapper {
+        width: 100%;
+        margin-top: 5%;
+        /* margin-left: 5%;*/
+        /*margin-right: 5%;*/
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .coordinates-wrapper {
+        /*flex-flow: column-reverse nowrap;*/
+    }
+
+    /*.button-wrapper {
+        width: 80%;
+        margin: 5% auto 0 auto
+    }*/
+
+    .button-wrapper .form-errors {
+        min-height: 60px;
+    }
+
+    /*canvas {
+        width: 100%
+    }*/
+
+}
+
+
+@media screen and (min-width: 1176px) {
+    .button-wrapper {
+        margin-right: 5%;
+        padding: 1vw;
+        border-radius: 1vw;
+    }
+}

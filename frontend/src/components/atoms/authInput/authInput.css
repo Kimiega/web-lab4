@@ -1,0 +1,21 @@
+.log-field input[type=text], input[type=password] {
+    transition-duration: 0s;
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.log-field input[type=text], input[type=password] {
+    padding: 1vw 2vw;
+    margin: 2vw 0;
+    display: inline-block;
+    border: 0.15vw solid white;
+    border-radius: 0.5vw;
+    box-sizing: border-box;
+}
